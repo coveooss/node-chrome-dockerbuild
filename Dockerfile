@@ -5,6 +5,7 @@ RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable 
 RUN sh -c 'echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list.d/backport.list'
 
 RUN apt-get update
+RUN apt-get install -y python
 RUN apt-get install -y google-chrome-unstable
 
 RUN apt-get install -yq libgconf-2-4
