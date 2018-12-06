@@ -16,3 +16,5 @@ RUN apt-get install -y libncurses5-dev  libncursesw5-dev xz-utils tk-dev
 # RUN apt-get install -y -t jessie-backports ca-certificates-java 
 # RUN apt-get install -y openjdk-8-jdk && update-alternatives --config java
 RUN apt-get install -y openjdk-8-jdk
+
+RUN echo -e "[hostsecurity]\nminimunprotocol = tls1.2" > etc/mercurial/hgrc
