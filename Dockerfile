@@ -6,7 +6,7 @@ RUN sh -c 'echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc
 
 RUN apt-get update
 RUN apt-get install -y python
-RUN apt-get install -y google-chrome-unstable
+RUN apt-get install -y google-chrome-stable
 
 RUN apt-get install -yq libgconf-2-4
 RUN apt-get install -y make build-essential libssl-dev zlib1g-dev   
