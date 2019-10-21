@@ -1,4 +1,4 @@
-FROM node:10-buster
+FROM node:12-buster
 
 # Ensure we use the latest version of npm.
 RUN npm i -g npm
